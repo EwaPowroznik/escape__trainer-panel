@@ -4,7 +4,7 @@
   --color-orange:rgb(236, 103, 38);
   --color-grey-dark:rgb(51, 51, 51);
   --color-grey-light:rgb(226, 226, 226);
-  --color-grey-medium:rgb(87, 86, 86);
+  --color-grey-medium:rgb(171, 171, 171);
   --color-white:rgb(255, 255, 255);
 }
 
@@ -62,50 +62,6 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-}
-
-.navbar .social {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: .2rem;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-}
-
-.navbar .social--facebook {
-  background: url(../img/fb.svg) no-repeat center center/contain;
-}
-
-.navbar .social--instagram {
-  background: url(../img/instagram.svg) no-repeat center center/contain;
-}
-
-.navbar .social--linkedin {
-  background: url(../img/linkedin.svg) no-repeat center center/contain;
-}
-
-.navbar .social--youtube {
-  background: #ababab;
-  position: relative;
-}
-
-.navbar .social--youtube:after {
-  content: '';
-  background: url(../img/youtube.svg) no-repeat center center/contain;
-  position: Absolute;
-  top: 50%;
-  left: 50%;
-  width: 80%;
-  height: 80%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-filter: brightness(20%);
-          filter: brightness(20%);
-}
-
-.navbar .social:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
 }
 
 .main {
@@ -284,6 +240,50 @@ p {
 .solution__text p {
   margin-bottom: 1%;
   text-align: justify;
+}
+
+.social {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: .2rem;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.social--facebook {
+  background: url(../img/fb.svg) no-repeat center center/contain;
+}
+
+.social--instagram {
+  background: url(../img/instagram.svg) no-repeat center center/contain;
+}
+
+.social--linkedin {
+  background: url(../img/linkedin.svg) no-repeat center center/contain;
+}
+
+.social--youtube {
+  background: var(--color-grey-medium);
+  position: relative;
+}
+
+.social--youtube:after {
+  content: '';
+  background: url(../img/youtube.svg) no-repeat center center/contain;
+  position: Absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.social:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .section-text {

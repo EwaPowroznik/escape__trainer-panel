@@ -40,6 +40,42 @@ p{
         text-align: justify;
     }
 }
+// ikony sociali w belce
+.social{
+    width:1.5rem;
+    height:1.5rem;
+    margin: .2rem;
+    transition: all .2s ease-out;
+    &--facebook{
+        background:url(../img/fb.svg)no-repeat center center/contain;
+    }
+    &--instagram{
+        background:url(../img/instagram.svg)no-repeat center center/contain;
+    }
+    &--linkedin{
+        background:url(../img/linkedin.svg)no-repeat center center/contain;
+    }
+    &--youtube{
+        background:var(--color-grey-medium);
+        position:relative;
+       
+        &:after{
+            content: '';
+            background:url(../img/youtube.svg)no-repeat center center/contain;
+            position:Absolute;
+            top:50%;
+            left:50%;
+            width:80%;
+            height:80%;
+            transform:translate(-50%,-50%);
+            filter:brightness(20%);
+        }
+    }
+    &:hover{
+        filter:brightness(80%);
+    }
+}
+
 // tekst z belki przerywnika
 .section-text{
     color:var(--color-red);
@@ -127,6 +163,7 @@ z-index:0;
     }
 }
 .btn-login{
+
 
 }
 
