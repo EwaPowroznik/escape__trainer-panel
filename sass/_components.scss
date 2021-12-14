@@ -94,6 +94,7 @@ z-index:0;
     min-height:4rem;
     cursor:pointer;
 
+    &:active,
     &:hover{
         color:var(--color-white);
         background:var(--color-red);
@@ -124,6 +125,9 @@ z-index:0;
             filter: brightness(150%);
         }
     }
+}
+.btn-login{
+
 }
 
 // wybór języka

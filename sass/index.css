@@ -349,7 +349,7 @@ p {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:active, .btn:hover {
   color: var(--color-white);
   background: var(--color-red);
   border: 1px solid var(--color-red);
