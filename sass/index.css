@@ -6,6 +6,7 @@
   --color-grey-light:rgb(226, 226, 226);
   --color-grey-medium:rgb(171, 171, 171);
   --color-white:rgb(255, 255, 255);
+  --color-black:rgb(0, 0, 0);
 }
 
 * {
@@ -381,6 +382,24 @@ p {
   border: none;
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+}
+
+.btn-login {
+  color: inherit;
+  background: inherit;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  padding: .15rem .5rem;
+  height: 1.6rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.btn-login:hover {
+  color: var(--color-black);
+  background: var(--color-grey-medium);
 }
 
 .select {
