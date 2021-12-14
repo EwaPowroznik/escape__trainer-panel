@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    <title>Panel trenera</title>
+</head>
+<body>
+    <!-- szara belka na górze ekranu -->
+    <div class="navbar">
+        <div class="navbar__textbox">
+            <div class="navbar__icons">
+                <a href="https://pl-pl.facebook.com/mindlabcompany/" target="blank" class="social social--facebook"></a>
+                <a href="https://www.instagram.com/_mindlab" target="blank" class="social social--instagram"></a>
+                <a href="https://pl.linkedin.com/company/mindlab-sp-z-o-o-" target="blank" class="social social--linkedin"></a>
+                <a href="https://www.youtube.com/user/MindLabPL" target="blank" class="social social--youtube"></a>
+            </div>
+               
+            <p>zaloguj</p>
+        </div>
+    </div>
+    <!-- główny container -->
+    <div class="main">
+        <!-- grafika z logo i boxem na tytuł -->
+        <header class="header">
+            <div class="header_box">
+                <h1 class="heading-primary">Integracja Online</h1>
+                <h2 class="heading-secondary">Panel trenera</h2>
+            </div>
+        </header>
+        <!-- szary box z mindlabowymi kolorami na wstęp -->
+        <div class="text-zone">
+            <div class="color-bar"></div>
+            <h2 class="heading-secondary heading-secondary--darker">Instrukcja dla trenera</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum maiores ipsa ipsam ab commodi deserunt mollitia a? Dignissimos culpa error quasi voluptatum quos rem doloremque itaque aliquid iste corporis eaque officiis in laudantium aut delectus temporibus excepturi iure esse, accusamus quae eos consequatur necessitatibus reprehenderit? Deleniti alias magnam facilis nulla.</p>
+        </div>
+        <!-- container na buttony z wersjami do wyboru -->
+        <div class="section">
+            <button class="btn"> 
+                <span class="btn-text__main">Ucieczka z morza</span>
+            </button>
+            <button class="btn">
+                <span class="btn-text__main">Uratuj Mikołaja!</span>
+            </button>
+            <!-- <button class="btn">
+                <span class="btn-text__main">Ucieczka z morza</span>
+            </button> -->
+            <button class="btn btn--inactive">
+                <span class="btn-text__main">Loch Alchemika</span>
+                <span class="btn-text__secondary">Spytaj swojego opiekuna klienta</span>
+            </button>
+
+        </div>
+        <!-- belka dzieląca sekcje -->
+        <div class="section-bar">
+            <div class="section-text">Ucieczka z morza</div>
+            <hr>
+        </div>
+        <!-- kontenerek na wybór języka -->
+        <div class="container container--language">
+            <button class="btn__reverse"> 
+                <span class="btn-text__main">Język</span>
+            </button>
+            <select name="language" id="select-standard" class="select">
+                <option value="pl" class="select-item">polski</option>
+                <option value="eng" class="select-item">angielski</option>
+            </select>
+        </div>
+        <!-- contenerek na kody dla graczy -->
+        <div class="container container--version">
+            <!-- próba zrobienia czegoś zbliżónego do dropdown menu, ale nie na hover -->
+            <div class="dropdown">
+                <input id="drop-switch4" type="checkbox" class="drop-switch" />
+                <label for="drop-switch4" class="btn__reverse drop-label">
+                    <span class="btn-text__main">Wersja 4os</span>
+                    <div class="icon"></div>
+                </label>
+                <!-- miejsce na linki  -->
+                <ul class="submenu">
+                    <li><a href="https://mikolaj.mindlab.pl/?daraba">Gracz 1</a></li>
+                    <li><a href="https://mikolaj.mindlab.pl/?henato">Gracz 2</a></li>
+                    <li><a href="https://mikolaj.mindlab.pl/?porati">Gracz 3</a></li>
+                    <li><a href="https://mikolaj.mindlab.pl/?wemuno">Gracz 4</a></li>
+                </ul>    
+            </div>
+            <div class="dropdown">
+                <input id="drop-switch5" type="checkbox" class="drop-switch" />
+                <label for="drop-switch5" class="btn__reverse drop-label">
+                    <span class="btn-text__main">Wersja 5os</span>
+                    <div class="icon"></div>
+
+                </label>
+                <ul class="submenu">
+                    <li><a href="#">Gracz 1</a></li>
+                    <li><a href="#">Gracz 2</a></li>
+                    <li><a href="#">Gracz 3</a></li>
+                    <li><a href="#">Gracz 4</a></li>
+                    <li><a href="#">Gracz 5</a></li>
+                </ul>    
+            </div>
+            <div class="dropdown">
+                <input id="drop-switch6" type="checkbox" class="drop-switch" />
+                <label for="drop-switch6" class="btn__reverse drop-label">
+                    <span class="btn-text__main">Wersja 6os</span>
+                    <div class="icon"></div>
+
+                </label>
+                <ul class="submenu">
+                    <li><a href="#">Gracz 1</a></li>
+                    <li><a href="#">Gracz 2</a></li>
+                    <li><a href="#">Gracz 3</a></li>
+                    <li><a href="#">Gracz 4</a></li>
+                    <li><a href="#">Gracz 5</a></li>
+                    <li><a href="#">Gracz 6</a></li>
+                </ul>  
+            </div> 
+            <div class="dropdown">
+                    <input id="drop-switch7" type="checkbox" class="drop-switch" />
+                    <label for="drop-switch7" class="btn__reverse drop-label">
+                        <span class="btn-text__main">Wersja 7os</span>
+                        <div class="icon"></div>
+
+                    </label>
+                    <ul class="submenu">
+                        <li><a href="#">Gracz 1</a></li>
+                        <li><a href="#">Gracz 2</a></li>
+                        <li><a href="#">Gracz 3</a></li>
+                        <li><a href="#">Gracz 4</a></li>
+                        <li><a href="#">Gracz 5</a></li>
+                        <li><a href="#">Gracz 6</a></li>
+                        <li><a href="#">Gracz 6</a></li>
+                    </ul>      
+            </div>         
+        </div> 
+        <div class="container container--solution">
+            <div class="dropdown">
+                <input id="drop-switchS" type="checkbox" class="drop-switch" />
+                <label for="drop-switchS" class="btn__reverse drop-label">
+                    <span class="btn-text__main">Rozwiązanie</span>
+                    <div class="icon"></div>
+                </label>
+                <div class="submenu solution__text">
+                    <h2 class="heading-secondary heading-secondary--darker">Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, placeat, doloribus distinctio neque tenetur maxime quas, voluptates numquam magni quae. Praesentium, quos harum. Qui quo sint amet unde sapiente ex? Earum maxime culpa hic rerum sunt ut qui quasi eius repudiandae. Eaque temporibus repellat aspernatur quas iusto velit unde voluptatibus deserunt pariatur at aliquid enim voluptatum, dignissimos, tempore nesciunt dolores similique laboriosam odit quisquam facilis repudiandae nihil quibusdam eveniet qui! Cumque, reiciendis vero. Excepturi, natus labore est laborum facilis nobis, deserunt, velit repellat consequatur nesciunt veniam odio necessitatibus. Libero nostrum odit similique possimus deleniti et veritatis, cupiditate vel repellendus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, placeat, doloribus distinctio neque tenetur maxime quas, voluptates numquam magni quae. Praesentium, quos harum. Qui quo sint amet unde sapiente ex? Earum maxime culpa hic rerum sunt ut qui quasi eius repudiandae. Eaque temporibus repellat aspernatur quas iusto velit unde voluptatibus deserunt pariatur at aliquid enim voluptatum, dignissimos, tempore nesciunt dolores similique laboriosam odit quisquam facilis repudiandae nihil quibusdam eveniet qui! Cumque, reiciendis vero. Excepturi, natus labore est laborum facilis nobis, deserunt, velit repellat consequatur nesciunt veniam odio necessitatibus. Libero nostrum odit similique possimus deleniti et veritatis, cupiditate vel repellendus?</p>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem, placeat, doloribus distinctio neque tenetur maxime quas, voluptates numquam magni quae. Praesentium, quos harum. Qui quo sint amet unde sapiente ex? Earum maxime culpa hic rerum sunt ut qui quasi eius repudiandae. Eaque temporibus repellat aspernatur quas iusto velit unde voluptatibus deserunt pariatur at aliquid enim voluptatum, dignissimos, tempore nesciunt dolores similique laboriosam odit quisquam facilis repudiandae nihil quibusdam eveniet qui! Cumque, reiciendis vero. Excepturi, natus labore est laborum facilis nobis, deserunt, velit repellat consequatur nesciunt veniam odio necessitatibus. Libero nostrum odit similique possimus deleniti et veritatis, cupiditate vel repellendus?</p>
+                </div>  
+            </div>         
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__textbox">
+            <div class="btn btn__dark">
+                <span class="btn-text__main"><a href="https://docs.google.com/spreadsheets/d/1dJrxVLhNHfrfOtpqnCHVmkLh-N98QQAiP4urACZSovA/edit#gid=0" target="blank">Poznaj wyniki graczy</a></span>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,38 @@
+// kolory
+:root {
+    --color-red: rgb(148, 23, 40);
+    --color-blue:rgb(35, 62, 99);
+    --color-orange:rgb(236, 103, 38);
+    --color-grey-dark:rgb(51, 51, 51);
+    --color-grey-light:rgb(226, 226, 226);
+    --color-grey-medium:rgb(87, 86, 86);
+    --color-white:rgb(255, 255, 255);
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto Regular, sans-serif;
+    background:var(--color-white);
+    color:var(--color-grey-dark);
+    font-size:62.5%;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+// mixins
+@mixin standard-text{
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform:uppercase;
+    letter-spacing: .05rem;
+    display:block;
+}

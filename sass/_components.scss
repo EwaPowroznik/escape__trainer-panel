@@ -1,0 +1,199 @@
+// typography
+.heading-primary{
+    font-family: 'RobotoSlab Regular','Roboto Slab',serif;
+    color:var(--color-white);
+    font-weight: 400;
+    font-size: 2.6rem;
+    letter-spacing: .05rem;
+    margin-bottom:.5rem;
+
+}
+.heading-secondary{
+    font-family: 'RobotoSlab Regular','Roboto Slab',serif;
+    color:var(--color-white);
+    font-weight: 400;
+    font-size: 2.2rem;
+    letter-spacing: .05rem;
+
+    &--darker{
+        color:var(--color-grey-dark);
+        font-size:1.8rem;
+        font-weight:700;
+        letter-spacing: normal;
+        padding-bottom:.8rem;
+    }
+}
+
+.btn-text{
+    &__main{
+    @include standard-text;
+}
+}
+p{
+    font-size: 1rem;
+}
+.solution__text{
+    padding:2% 5%;
+
+    & p{
+        margin-bottom:1%;
+        text-align: justify;
+    }
+}
+// tekst z belki przerywnika
+.section-text{
+    color:var(--color-red);
+    background:var(--color-white);
+   @include standard-text;
+   font-size: .9rem;
+   position:absolute;
+   top:-1000%;
+   left:10%;
+   z-index:2;
+   padding:0 1rem;
+}
+
+// szary box tekstowy z mindlabowymi kolorami
+.text-zone{
+    background:var(--color-grey-light);
+    width:90%;
+    height:auto;
+    padding:10%;
+    position:relative;
+    grid-area:textzone;
+}
+// bar z kolorami mindlabu
+.color-bar{
+    position:absolute;
+    top:-10px;
+    left:0;
+    width:100%;
+    height:10px;
+    background: linear-gradient(to right,var(--color-red) 0,var(--color-red) 33%, var(--color-blue) 33%,var(--color-blue) 66%, var(--color-orange) 66%, var(--color-orange) 100%);
+    
+}
+// belka-"przerywnik"
+.section-bar{
+width:100%;
+height:1px;
+margin:3rem auto;
+grid-area:section-bar;
+position:relative;
+z-index:0;
+}
+
+// button i elementy buttonopodobne
+.btn{
+    color:var(--color-red);
+    background:var(--color-white);
+    border:1px solid var(--color-red);
+    padding:1.4rem 1.8rem;
+    display: inline-block;
+    transition: all .4s;
+    min-width:15rem;
+    min-height:4rem;
+    cursor:pointer;
+
+    &:hover{
+        color:var(--color-white);
+        background:var(--color-red);
+        border:1px solid var(--color-red);
+    }
+
+    &--inactive{
+        color:var(--color-grey-light);
+        border:1px solid var(--color-grey-light);
+        padding:1rem 1.8rem;  
+    }
+
+    &__reverse{
+        color:var(--color-white);
+        background:var(--color-red);
+        border:1px solid var(--color-red);
+        padding:1rem 2.4rem;
+        display: inline-block;    
+    }
+    &__dark{
+        background:var(--color-grey-dark);
+        color:var(--color-grey-light);
+        border:none;
+        &:hover{
+            background:var(--color-grey-dark);
+            color:var(--color-grey-light);
+            border:none;
+            filter: brightness(150%);
+        }
+    }
+}
+
+// wybór języka
+.select{
+    width:12rem;
+    color:var(--color-red);
+    background-color:var(--color-white);
+    background-image: url(../img/arrow-red.png);
+    background-position: right 10% center;
+    background-repeat: no-repeat;
+    background-size: auto 20%;
+    border:1px solid var(--color-red);
+    padding:1rem 1.8rem;
+    @include standard-text;
+    position:absolute;
+    display: inline-block;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    &::-ms-expand { display: none };
+   
+  }
+  .select-item{
+      font-size:.8rem;
+      text-transform: none; 
+  }
+
+//   dropdow menu - próba
+// schowanie switcha i zawartości
+.drop-switch,
+.submenu {
+    display: none;
+
+} 
+.drop-label {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+  }
+.drop-switch:checked~.submenu {
+    display: block;
+    
+}
+.submenu{
+    // border:1px solid var(--color-red);
+    background:var(--color-white);
+  
+}
+.icon{
+    background:url(../img/arrow-white.png)no-repeat -50% 50%/contain;
+    margin-left:.5rem;
+    width:1rem;
+    height:1rem;
+    display:inline-block;
+}
+.submenu li{
+    list-style: none;
+}
+.submenu a{
+    text-decoration:none;
+    color:var(--color-red);
+    padding:.5rem 2rem;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    transition: all .3s ease-out;
+    display:block;  
+    &:hover{
+        filter:brightness(10%);
+    }
+}
