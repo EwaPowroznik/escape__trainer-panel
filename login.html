@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="sass/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    <title>Panel trenera - logowanie</title>
 </head>
 <body>
+  <div class="navbar">
+    <div class="navbar__textbox">
+        <div class="navbar__icons">
+            <a href="https://pl-pl.facebook.com/mindlabcompany/" target="blank" class="social social--facebook"></a>
+            <a href="https://www.instagram.com/_mindlab" target="blank" class="social social--instagram"></a>
+            <a href="https://pl.linkedin.com/company/mindlab-sp-z-o-o-" target="blank" class="social social--linkedin"></a>
+            <a href="https://www.youtube.com/user/MindLabPL" target="blank" class="social social--youtube"></a>
+        </div>
+        <!-- <div class="navbar__login">
+            <button class="btn-login">Wyloguj ></button>
+        </div>       -->
+    </div>
 </div>
-<form action="form-submit.php" method="get">
+<div class="main">
+  <!-- grafika z logo i boxem na tytuł -->
+  <header class="header">
+      <div class="header_box">
+          <h1 class="heading-primary">Integracja Online</h1>
+          <h2 class="heading-secondary">Panel trenera</h2>
+      </div>
+  </header>
+  
+  <form action="form-submit.php" method="get">
     <div>
           <label for="email">Adres email</label>
         
@@ -28,6 +51,10 @@
         <p><a href="jakiśadres" target="_blank">Nie pamiętasz hasła? Sprawdź jak odzyskać dostęp</p></a>
       </div>
 </form>
+ 
+</div>
+
+
 </div>
 </body>
 </html>
